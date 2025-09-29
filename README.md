@@ -1,8 +1,8 @@
-#IVFEngine
+# IVFEngine
 An interpretable deep learning-based system that uses clinical parameters from IVF treatment cycles to predict
 live baby birth outcomes using FT-Transformer architecture
 
-#Environment Setup
+## Environment Setup
 This project was developed using a conda environment on a Linux system
 Before runing the given command, please install miniconda/anaconda
 
