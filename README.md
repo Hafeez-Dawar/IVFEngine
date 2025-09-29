@@ -12,7 +12,8 @@ conda activate transformer
 pip install -r requirements.txt
 
 ## Data preprocessing
-Prepare an XML-based latest spreadsheet (.xlsx) file to be used as an input. For all preprocessing steps, please take a look at the methodology section of our manuscript.
+Prepare an XML-based latest spreadsheet (.xlsx) file to be used as an input. For all preprocessing steps,
+please take a look at the methodology section of our manuscript.
 
 ## Quick Start
 cd translatomer3 
