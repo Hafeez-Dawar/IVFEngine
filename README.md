@@ -3,7 +3,7 @@ An interpretable deep learning-based system that uses clinical parameters from I
 live baby birth outcomes using FT-Transformer architecture
 
 #Environment Setup
-This project was developed using a conda environment on a Linux system:
+This project was developed using a conda environment on a Linux system
 Before runing the given command, please install miniconda/anaconda
 
 Create conda environment
@@ -15,14 +15,11 @@ conda activate transformer
 Install dependencies
 pip install -r requirements.txt
 
-Data preprocessing
+#Data preprocessing
 Prepare an XML-based latest spreadsheet (.xlsx) file to be used as an input. For all preprocessing steps, please take a look at the methodology section of our manuscript.
 
-Quick Start
-Navigate to the project directory
+#Quick Start
 cd translatomer3
-
-Activate conda environment
 conda activate transformer
 
 Launch the application
