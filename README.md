@@ -6,13 +6,13 @@ live baby birth outcomes using FT-Transformer architecture
 This project was developed using a conda environment on a Linux system
 Before runing the given command, please install miniconda/anaconda
 
-Create conda environment
+## Create conda environment
 conda create -n transformer python=3.8
 
-Activate environment
+## Activate environment
 conda activate transformer
 
-Install dependencies
+## Install dependencies
 pip install -r requirements.txt
 
 ## Data preprocessing
