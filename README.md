@@ -19,7 +19,7 @@ pip install -r requirements.txt
 Prepare an XML-based latest spreadsheet (.xlsx) file to be used as an input. For all preprocessing steps, please take a look at the methodology section of our manuscript.
 
 #Quick Start
-cd translatomer3
+cd translatomer3 
 conda activate transformer
 
 Launch the application
