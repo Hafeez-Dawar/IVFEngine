@@ -15,15 +15,15 @@ conda activate transformer
 Install dependencies
 pip install -r requirements.txt
 
-#Data preprocessing
+## Data preprocessing
 Prepare an XML-based latest spreadsheet (.xlsx) file to be used as an input. For all preprocessing steps, please take a look at the methodology section of our manuscript.
 
-#Quick Start
+## Quick Start
 cd translatomer3 
 conda activate transformer
 
 Launch the application
 streamlit run app.py
 
-Citation
+# Citation
 If you use IVFEngine in your research, please cite our work:
