@@ -1,28 +1,4 @@
-# First import streamlit
-import streamlit as st
 
-# Then try PyTorch installation
-import subprocess
-import sys
-
-try:
-    import torch
-except ImportError:
-    st.warning("PyTorch not found. Installing...")
-    subprocess.check_call([sys.executable, "-m", "pip", "install", "torch", "--extra-index-url", "https://download.pytorch.org/whl/cpu"])
-    import torch
-
-# Then the rest of your imports
-import numpy as np
-import pandas as pd
-import pickle
-import scipy.special
-import warnings
-import plotly.graph_objects as go
-import plotly.express as px
-warnings.filterwarnings('ignore')
-
-# ... rest of your original code
 
 
 
@@ -768,4 +744,5 @@ def main():
 if __name__ == "__main__":
 
     main()
+
 
