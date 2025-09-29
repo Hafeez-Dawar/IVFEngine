@@ -18,7 +18,7 @@ Prepare an XML-based latest spreadsheet (.xlsx) file to be used as an input. For
 cd translatomer3 
 conda activate transformer
 
-Launch the application
+### Launch the application
 streamlit run app.py
 
 # Citation
