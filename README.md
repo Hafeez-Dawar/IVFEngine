@@ -1,5 +1,5 @@
 # IVFEngine
-An interpretable deep learning-based system that uses clinical parameters from IVF treatment cycles to predict
+An interpretable deep learning-based tool that uses clinical parameters from IVF treatment cycles to predict
 live baby birth outcomes using FT-Transformer architecture
 
 ## Environment Setup
