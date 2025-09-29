@@ -1,3 +1,20 @@
+import subprocess
+import sys
+
+# Try to install PyTorch if not available
+try:
+    import torch
+except ImportError:
+    st.warning("PyTorch not found. Installing...")
+    subprocess.check_call([sys.executable, "-m", "pip", "install", "torch", "--extra-index-url", "https://download.pytorch.org/whl/cpu"])
+    import torch
+
+# Rest of your imports
+import streamlit as st
+import numpy as np
+# ... rest of your code
+
+
 
 
 #for english users
@@ -739,4 +756,5 @@ def main():
     st.markdown('</div>', unsafe_allow_html=True)
 
 if __name__ == "__main__":
+
     main()
