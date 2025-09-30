@@ -76,12 +76,14 @@ if not check_password():
 # === YOUR ORIGINAL APP CODE STARTS HERE ===
 # IMPORTANT: REMOVE ANY OTHER st.set_page_config() CALLS FROM YOUR ORIGINAL CODE
 
-# Import the FTTransformer model class
 try:
     from rtdl_revisiting_models import FTTransformer
 except ImportError:
-    st.error("rtdl_revisiting_models module not found. Please ensure it's installed and available.")
-    st.stop()
+    try:
+        from rtdl_revisiting_models.models import FTTransformer
+    except ImportError:
+        st.error("rtdl_revisiting_models module not found. Please ensure it's installed and available.")
+        st.stop()
 
 # Advanced CSS for journal-quality styling
 st.markdown("""
@@ -739,4 +741,5 @@ def main():
     st.markdown('</div>', unsafe_allow_html=True)
 
 if __name__ == "__main__":
+
     main()
