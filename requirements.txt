@@ -4,13 +4,11 @@ pandas
 scipy
 scikit-learn
 plotly
-
-# PyTorch - DO NOT specify +cpu or version with +
-# Let pip choose the appropriate version
-https://download.pytorch.org/whl/cpu/torch-2.0.1%2Bcpu-cp311-cp311-linux_x86_64.whl
-
-# Model dependencies
 einops
 delu
 rtdl
 rtdl_revisiting_models
+
+# PyTorch CPU - This format works on Streamlit Cloud
+torch --extra-index-url https://download.pytorch.org/whl/cpu
+torchvision --extra-index-url https://download.pytorch.org/whl/cpu
