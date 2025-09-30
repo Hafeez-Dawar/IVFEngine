@@ -1,21 +1,16 @@
-# Core dependencies
-streamlit==1.40.1
-numpy==1.23.5
-pandas==2.0.3
-scikit-learn==1.3.2
-scipy==1.10.1
+streamlit>=1.28.0
+numpy>=1.24.0,<2.0.0
+pandas>=2.0.0
+scipy>=1.10.0
+scikit-learn>=1.3.0
+plotly>=5.0.0
 
-# PyTorch (CPU-only version for Streamlit Cloud)
-torch==2.0.1
-torchvision==0.15.2
+# PyTorch - try installing without specifying CPU
+torch>=2.0.0
+torchvision>=0.15.0
 
-# Plotting
-plotly==6.3.0
-
-# Deep Learning Model
-rtdl==0.0.13
-rtdl_revisiting_models==0.0.2
-
-# Utilities
-einops==0.8.1
-delu==0.0.23
+# Model dependencies
+einops>=0.6.0
+delu>=0.0.20
+rtdl>=0.0.13
+rtdl-revisiting-models>=0.0.2
