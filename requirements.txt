@@ -4,8 +4,9 @@ pandas
 scipy
 scikit-learn
 plotly
+torch
+torchvision
 einops
 delu
 rtdl
-torch --extra-index-url https://download.pytorch.org/whl/cpu
 git+https://github.com/yandex-research/rtdl-revisiting-models.git
