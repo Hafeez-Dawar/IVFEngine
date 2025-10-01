@@ -1,4 +1,23 @@
+#for english users
+import streamlit as st
+import sys
 
+# === DEBUG CODE - ADD THIS FIRST ===
+st.write("Python version:", sys.version)
+st.write("Python path:", sys.path)
+
+try:
+    import torch
+    st.success("Torch imported successfully!")
+    st.write("Torch version:", torch.__version__)
+except ImportError as e:
+    st.error(f"Cannot import torch: {e}")
+    
+    # Check what packages ARE installed
+    import subprocess
+    result = subprocess.run(['pip', 'list'], capture_output=True, text=True)
+    st.text(result.stdout)
+    st.stop()  # Stop here if torch fails
 
 #for english users
 import streamlit as st
@@ -739,4 +758,5 @@ def main():
     st.markdown('</div>', unsafe_allow_html=True)
 
 if __name__ == "__main__":
+
     main()
