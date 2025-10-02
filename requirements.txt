@@ -4,25 +4,22 @@ altair==5.4.1
 astunparse==1.6.3
 attrs==25.3.0
 blinker==1.8.2
-Bottleneck @ file:///opt/conda/conda-bld/bottleneck_1657175564434/work
-Brotli @ file:///croot/brotli-split_1714483155106/work
+Bottleneck==1.3.5
 cachetools==4.2.4
-certifi @ file:///home/conda/feedstock_root/build_artifacts/certifi_1725278078093/work/certifi
-cffi @ file:///home/conda/feedstock_root/build_artifacts/cffi_1636046063618/work
-charset-normalizer @ file:///home/conda/feedstock_root/build_artifacts/charset-normalizer_1728479282467/work
+certifi==2024.8.30
+cffi==1.15.0
+charset-normalizer==3.4.0
 clang==5.0
 click==8.1.8
 cloudpickle==3.1.1
-cupy-cuda11x==12.3.0
-cycler @ file:///home/conda/feedstock_root/build_artifacts/cycler_1696677705766/work
+cycler==0.12.1
 delu==0.0.23
 easy_mpl==0.21.5
 einops==0.8.1
 et_xmlfile==2.0.0
-fastrlock==0.8.3
 Flask==3.0.3
 flatbuffers==1.12
-fonttools @ file:///home/conda/feedstock_root/build_artifacts/fonttools_1651017731964/work
+fonttools==4.33.3
 gast==0.4.0
 GEOparse==2.0.4
 gitdb==4.0.12
@@ -30,13 +27,10 @@ GitPython==3.1.45
 google-auth==1.35.0
 google-auth-oauthlib==0.4.6
 google-pasta==0.2.0
-graphviz @ file:///home/conda/feedstock_root/build_artifacts/python-graphviz_1727718607478/work
+graphviz==0.20.3
 grpcio==1.70.0
-h2 @ file:///home/conda/feedstock_root/build_artifacts/h2_1634280454336/work
 h5py==3.1.0
-hpack==4.0.0
-hyperframe @ file:///home/conda/feedstock_root/build_artifacts/hyperframe_1619110129307/work
-idna @ file:///home/conda/feedstock_root/build_artifacts/idna_1726459485162/work
+idna==3.10
 imbalanced-learn==0.12.4
 importlib_metadata==8.5.0
 importlib_resources==6.4.5
@@ -47,54 +41,47 @@ jsonschema==4.23.0
 jsonschema-specifications==2023.12.1
 keras==2.6.0
 Keras-Preprocessing==1.1.2
-kiwisolver @ file:///home/conda/feedstock_root/build_artifacts/kiwisolver_1648854389294/work
+kiwisolver==1.4.2
 libzero==0.0.4
 llvmlite==0.41.1
 Markdown==3.7
 markdown-it-py==3.0.0
 MarkupSafe==2.1.5
-matplotlib @ file:///tmp/build/80754af9/matplotlib-suite_1634667019719/work
+matplotlib==3.4.3
 mdurl==0.1.2
-mkl-fft @ file:///croot/mkl_fft_1695058164594/work
-mkl-random @ file:///croot/mkl_random_1695059800811/work
-mkl-service==2.4.0
 munkres==1.1.4
 narwhals==1.42.1
 numba==0.58.1
-numexpr @ file:///croot/numexpr_1683221822650/work
+numexpr==2.8.4
 numpy==1.23.5
-nvidia-nccl-cu12==2.27.7
 oauthlib==3.3.1
 openpyxl==3.1.5
 opt-einsum==3.3.0
 packaging==24.2
 pandas==2.0.3
 patsy==1.0.1
-pillow @ file:///croot/pillow_1721059439630/work
+pillow==10.4.0
 pkgutil_resolve_name==1.3.10
-platformdirs @ file:///croot/platformdirs_1692205439124/work
+platformdirs==3.10.0
 plotly==6.3.0
 ply==3.11
-pooch @ file:///croot/pooch_1695850093751/work
+pooch==1.7.0
 protobuf==3.20.3
 pyarrow==17.0.0
 pyasn1==0.6.1
 pyasn1_modules==0.4.2
-pycparser @ file:///home/conda/feedstock_root/build_artifacts/pycparser_1711811537435/work
+pycparser==2.22
 pydeck==0.9.1
 Pygments==2.19.2
-pynvml==8.0.4
-pyparsing @ file:///home/conda/feedstock_root/build_artifacts/pyparsing_1724616129934/work
-PyQt5==5.15.10
-PyQt5-sip @ file:///croot/pyqt-split_1698769088074/work/pyqt_sip
-PySocks @ file:///tmp/build/80754af9/pysocks_1605305779399/work
+pyparsing==3.1.4
+PySocks==1.7.1
 pyswarm==0.6
 python-calamine==0.4.0
-python-dateutil @ file:///croot/python-dateutil_1716495738603/work
-pytz @ file:///home/conda/feedstock_root/build_artifacts/pytz_1726055524169/work
+python-dateutil==2.9.0
+pytz==2024.2
 pyxlsb==1.0.10
 referencing==0.35.1
-requests @ file:///home/conda/feedstock_root/build_artifacts/requests_1717057054362/work
+requests==2.32.3
 requests-oauthlib==2.0.0
 rich==13.9.4
 rpds-py==0.20.1
@@ -103,10 +90,9 @@ rtdl==0.0.13
 rtdl_revisiting_models==0.0.2
 scikit-learn==1.3.2
 scipy==1.10.1
-seaborn @ file:///tmp/build/80754af9/seaborn_1629307859561/work
+seaborn==0.11.2
 SeqMetrics==2.0.0
 shap==0.43.0
-sip @ file:///croot/sip_1698675935381/work
 six==1.15.0
 slicer==0.0.7
 smmap==5.0.2
@@ -121,17 +107,15 @@ tensorflow-estimator==2.6.0
 termcolor==1.1.0
 threadpoolctl==3.5.0
 toml==0.10.2
-tomli @ file:///opt/conda/conda-bld/tomli_1657175507142/work
-torch==1.13.1+cu116
-tornado @ file:///croot/tornado_1718740109488/work
+tomli==2.0.1
+torch==1.13.1
+tornado==6.4.1
 tqdm==4.67.1
 typing_extensions==4.13.2
 tzdata==2025.2
-unicodedata2 @ file:///croot/unicodedata2_1713212950228/work
-urllib3 @ file:///home/conda/feedstock_root/build_artifacts/urllib3_1726496430923/work
+urllib3==2.2.3
 watchdog==4.0.2
 Werkzeug==3.0.6
 wrapt==1.12.1
 xgboost==2.1.4
 zipp==3.20.2
-zstandard @ file:///croot/zstandard_1728569189425/work
