@@ -1,15 +1,4 @@
-#for english users
 import streamlit as st
-import torch
-import numpy as np
-import pandas as pd
-import pickle
-import scipy.special
-import warnings
-import plotly.graph_objects as go
-import plotly.express as px
-warnings.filterwarnings('ignore')
-
 
 # === SET PAGE CONFIG - MUST BE FIRST STREAMLIT COMMAND ===
 st.set_page_config(
@@ -18,6 +7,23 @@ st.set_page_config(
     layout="wide",
     initial_sidebar_state="collapsed"
 )
+
+import torch
+import numpy as np
+import pandas as pd
+import pickle
+import scipy.special
+import warnings
+import plotly.graph_objects as go
+import plotly.express as px
+
+warnings.filterwarnings('ignore')
+
+try:
+    from rtdl_revisiting_models import FTTransformer
+except ImportError:
+    st.error("rtdl_revisiting_models module not found. Please ensure it's installed and available.")
+    st.stop()
 
 # === PASSWORD PROTECTION ===
 def check_password():
@@ -66,19 +72,6 @@ def check_password():
 
 # Check password before showing the app
 if not check_password():
-    st.stop()
-
-
-
-
-# === YOUR ORIGINAL APP CODE STARTS HERE ===
-# IMPORTANT: REMOVE ANY OTHER st.set_page_config() CALLS FROM YOUR ORIGINAL CODE
-
-# Import the FTTransformer model class
-try:
-    from rtdl_revisiting_models import FTTransformer
-except ImportError:
-    st.error("rtdl_revisiting_models module not found. Please ensure it's installed and available.")
     st.stop()
 
 # Advanced CSS for journal-quality styling
@@ -737,7 +730,4 @@ def main():
     st.markdown('</div>', unsafe_allow_html=True)
 
 if __name__ == "__main__":
-
     main()
-
-
