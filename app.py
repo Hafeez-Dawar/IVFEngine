@@ -44,7 +44,7 @@ def check_password():
     st.markdown("""
     <div style='text-align: center; padding: 2rem;'>
         <h1>🔒 IVFEngine: A deep learning based live baby birth prediction system</h1>
-        <p><strong>The manuscript is currently under submission stages so access is restricted to journal reviewers and editors only.</strong></p>
+        <p><strong>The manuscript is currently under submission stages so access is restricted to editorial office only.</strong></p>
         <p style='color: #666; font-size: 0.9em;'>
     </div>
     """, unsafe_allow_html=True)
