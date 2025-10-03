@@ -30,7 +30,7 @@ def check_password():
     """Returns `True` if the user had the correct password."""
     
     # PASSWORD FOR REVIEWERS/EDITORS
-    correct_password = "review123"
+    correct_password = ""
     
     # Initialize session state
     if "password_correct" not in st.session_state:
