@@ -194,6 +194,35 @@
             font-size: 0.95em;
         }
         
+        .visitor-map {
+            background: #f8f9fa;
+            border: 1px solid #e0e0e0;
+            padding: 25px;
+            border-radius: 10px;
+            margin-top: 30px;
+            text-align: center;
+        }
+        
+        .visitor-map h3 {
+            color: #2c3e50;
+            margin-bottom: 15px;
+        }
+        
+        .visitor-map p {
+            color: #666;
+            margin-bottom: 15px;
+            font-size: 0.95em;
+        }
+        
+        .map-container {
+            width: 100%;
+            height: 300px;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+            margin-top: 15px;
+        }
+        
         @media (max-width: 600px) {
             .container {
                 padding: 30px 20px;
@@ -206,6 +235,10 @@
             .subtitle {
                 font-size: 1em;
             }
+            
+            .map-container {
+                height: 200px;
+            }
         }
     </style>
 </head>
@@ -214,7 +247,7 @@
         <h1>IVFEngine: A deep learning based live baby birth prediction system</h1>
         
         <div class="description">
-            <p><strong>IVFEngine</strong> is an interpretable deep learning model that uses clinical parameters from IVF treatment cycles to predict live baby birth outcomes using the FT-Transformer architecture.</p>
+            <p><strong>IVFEngine (Invitro fertilization engine)</strong> is an interpretable deep learning model that uses clinical parameters from IVF treatment cycles to predict live baby birth outcomes using the FT-Transformer architecture.</p>
         </div>
         
         <div class="links-section">
@@ -241,6 +274,24 @@
         <div class="citation">
             <h3>📝 Citation</h3>
             <p>If you use IVFEngine in your research work, please cite our work.</p>
+        </div>
+        
+        <div class="visitor-map">
+            <h3>🌍 Visitor Map</h3>
+            <p>See where our visitors are coming from around the world</p>
+            <div class="map-container">
+                <!-- Visitor Map using IPInfo free service -->
+                <iframe 
+                    src="https://maps.ipinfo.io/ipmap/embed.html?token=free" 
+                    width="100%" 
+                    height="100%" 
+                    frameborder="0" 
+                    style="border:0">
+                </iframe>
+            </div>
+            <p style="margin-top: 15px; font-size: 0.85em; color: #888;">
+                This map shows the approximate geographic distribution of our visitors
+            </p>
         </div>
     </div>
 </body>
