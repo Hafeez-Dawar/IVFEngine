@@ -25,55 +25,6 @@ except ImportError:
     st.error("rtdl_revisiting_models module not found. Please ensure it's installed and available.")
     st.stop()
 
-# === PASSWORD PROTECTION ===
-def check_password():
-    """Returns `True` if the user had the correct password."""
-    
-    # PASSWORD FOR REVIEWERS/EDITORS
-    correct_password = ""
-    
-    # Initialize session state
-    if "password_correct" not in st.session_state:
-        st.session_state["password_correct"] = False
-    
-    # If already authenticated, show the app
-    if st.session_state["password_correct"]:
-        return True
-    
-    # Show password input form
-    st.markdown("""
-    <div style='text-align: center; padding: 2rem;'>
-        <h1>🔒 IVFEngine: A deep learning based live baby birth prediction system</h1>
-        <p><strong>The manuscript is currently under submission stages so access is restricted to editorial office only.</strong></p>
-        <p style='color: #666; font-size: 0.9em;'>
-    </div>
-    """, unsafe_allow_html=True)
-    
-    # Create columns for centered layout
-    col1, col2, col3 = st.columns([1, 2, 1])
-    
-    with col2:
-        password_input = st.text_input(
-            "Enter access password:", 
-            type="password", 
-            key="password_input"
-        )
-        
-        submit_button = st.button("Submit Password")
-        
-        if submit_button:
-            if password_input == correct_password:
-                st.session_state["password_correct"] = True
-                st.rerun()
-            else:
-                st.error("❌ Incorrect password. Please contact the corresponding author for access.")
-    
-    return False
-
-# Check password before showing the app
-if not check_password():
-    st.stop()
-
 # Advanced CSS for journal-quality styling
 st.markdown("""
 <style>
